@@ -1,3 +1,75 @@
+:root {
+    --ref-gray-100: #f5f6f8 !important;
+    --ref-gray-300: #dee2e6 !important;
+    --ref-gray-600: #4e5d78 !important;
+    --ref-gray-700: #495057 !important;
+    --ref-border-radius: 0 !important;
+    --ref-input-padding: 0.5rem 1rem !important;
+    --ref-btn-padding: 0.5rem 1.5rem !important;
+    --ref-btn-border-radius: 0 !important;
+}
+:root {
+    --bs-blue: #3763f4;
+    --bs-indigo: #24285b;
+    --bs-purple: #6f42c1;
+    --bs-pink: #e33cd1;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffd200;
+    --bs-green: #00b779;
+    --bs-teal: #00b4c9;
+    --bs-cyan: #00b4c9;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #4e5d78;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f5f6f8;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #4e5d78;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #2d2d2d;
+    --bs-primary: #24285b;
+    --bs-light: #f5f6f8;
+    --bs-dark: #343a40;
+    --bs-font-sans-serif: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.6;
+    --bs-body-color: #2d2d2d;
+    --bs-body-bg: #fff;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #dee2e6;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0;
+    --bs-border-radius-sm: 0;
+    --bs-border-radius-lg: 0;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-2xl: 2rem;
+    --bs-border-radius-pill: 50rem;
+    --bs-link-color: #24285b;
+    --bs-link-hover-color: #1d2049;
+    --bs-code-color: #e33cd1;
+    --bs-highlight-bg: #fff6cc;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+::selection {
+    color: #fff;
+    background: #24285b;
+    text-shadow: none;
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,30 +78,78 @@
     list-style: none;
 }
 body {
-    background: #f0f5fa;
-    font-family:'Courier New', Courier, monospace;
+    background: var(---bs-light);
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
 }
 nav {
-    height: 60px;
-    background: #eee;
+    height: 12vh;
+    background: var(--bs-body-bg);
 }
-nav, ul, li {
+nav, nav > ul {
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-nav p {
-    font-weight: 900;
-    font-size: 2rem;
-    text-transform: uppercase;
-    padding-right: 3rem;
-}
-nav > ul > li , nav > p{
+nav > ul > li , nav > h3{
     cursor: pointer;
 }
+.logo {
+    position: relative; 
+    left: 13vw;
+    color: var(--bs-dark);   
+}
+.logo span {
+    color: var(--bs-green);
+    font-weight: 600;
+    font-style: italic;
+}
 nav > ul > li {
-    font-weight: bold;
+    opacity: .5;
+    transition: all 0.2s ease-in-out;
+}
+nav > ul > li:hover {
+    opacity: 1;
+    color: var(--bs-dark);   
 }
 nav > ul {
     gap: 2rem;
+}
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+.bigheading {
+    width: 700px;
+}
+.bigheading h1 {
+    color: var(--bs-dark);   
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+.btn {
+    width: 130px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--bs-green);
+    border: 2.5px solid var(--bs-green);
+    transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+    color: var(--bs-body-bg);
+    background: var(--bs-green);
+}
+.underline {
+    text-decoration-line: underline;
+    text-decoration-color: var(--bs-green);
+    text-decoration-thickness: 4px;
 }
