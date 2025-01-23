@@ -1,0 +1,41 @@
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE and editor-specific files
+.vscode/
+.idea/
+*.swp
+
+# Ignore local environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Ignore Parcel build output
+/.parcel-cache/
+/dist/
+/build/
+
+# Ignore dependency directories (if any in future)
+node_modules/
+
+# Ignore Tailwind CSS compiled files (if generated separately)
+/css/main.css
+
+# Ignore log files
+*.log
+*.log.*
+
+# Ignore system-specific files
+*.bak
+*.tmp
+
+# Ignore all configuration files or anything personal
+/.sass-cache/
+/public/
+
+/assets/generated/
+read.md
