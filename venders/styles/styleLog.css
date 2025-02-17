@@ -81,10 +81,17 @@
 }
 .login-container .login-form form .form-checkbox {
   margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .login-container .login-form form .form-checkbox label {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
+}
+.login-container .login-form form .form-checkbox input {
+  width: 1rem;
+  height: 1rem;
 }
 .login-container .login-form form .form-submit {
   display: flex;
