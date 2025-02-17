@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/venders/styles/style.css" />
+    <title>Market Dash</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-form">
+        <div class="text">
+          <h1>Join MarketDash</h1>
+          <p>Sign up for free</p>
+        </div>
+        <form>
+          <div class="name">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="terms" required />
+            <label for="terms">
+              I agree with the <a href="#">Terms</a> and
+              <a href="#">Privacy Policy</a>
+            </label>
+          </div>
+          <div class="form-submit">
+            <button type="submit">Get Started</button>
+          </div>
+        </form>
+        <div class="other-login">
+          <p>Or</p>
+          <div class="social-login">
+            <button class="google-btn">
+              <img
+                src="https://w7.pngwing.com/pngs/882/225/png-transparent-google-logo-google-logo-google-search-icon-google-text-logo-business-thumbnail.png"
+                alt="Google Icon"
+              />
+              Sign Up with Google
+            </button>
+            <button class="facebook-btn">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                alt="Facebook Icon"
+              />
+              Sign Up with Facebook
+            </button>
+          </div>
+          <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+      </div>
+      <div class="login-image">
+        <img src="/venders/Images/loginback.jpg" alt="Login Background" />
+      </div>
+    </div>
+
+    <script src="./lib/index.js"></script>
+  </body>
+</html>
