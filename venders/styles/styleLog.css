@@ -11,7 +11,7 @@ body {
   font-family: Roboto, sans-serif;
   height: 100vh;
 }
-/* Login Page */
+/* Login and Signup Page */
 .login-container {
   /* background-color: #f7f7f7; */
   display: grid;
