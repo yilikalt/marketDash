@@ -1,3 +1,6 @@
+body {
+  height: 100vh;
+}
 /* Login and Signup Page */
 .login-container {
   /* background-color: #f7f7f7; */
