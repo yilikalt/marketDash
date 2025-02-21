@@ -127,7 +127,7 @@
   font-size: 0.8rem;
 }
 
-/* User */
+/* User Icon */
 .user {
   display: flex;
   align-items: center;
@@ -148,6 +148,7 @@
   font-size: 1rem;
   font-weight: 600;
 }
+/* Footer */
 .footer {
   grid-area: 3 / 1 / 4 / 3;
   /* background: #016b56; */
@@ -182,6 +183,7 @@
   padding: 1rem;
   border-top: 1px solid #aaa;
 }
+/* Main Content */
 .main {
   grid-area: 2 / 2 / 3 / 3;
 }
