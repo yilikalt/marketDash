@@ -24,8 +24,6 @@
 ## 💻 Technologies Used
 
 - **HTML5** & **CSS3** for building the base and styling 🖥️
-- **TailwindCSS** for utility-first styling ⚡
-- **ShadCN/UI** for reusable UI components 🔥
 - **Chart.js** for interactive data visualization 📊
 - **Zod** for validation 🔏
 - **Sentry** for error tracking 🛠️
